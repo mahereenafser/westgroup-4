@@ -1,5 +1,5 @@
 const marqueeText =
-  "+++ Digital Agency Based in Berlin +++ Framer +++ Webdeisgn +++ App Design";
+  "+++ Fee-Only Fiduciary Advisors +++ Wealth Management +++ Estate Planning +++ Tax-Efficient Strategies +++ Surrey, BC +++ Metro Vancouver";
 const marqueeItems = Array(8).fill(marqueeText);
 
 export default function MarqueeSection() {

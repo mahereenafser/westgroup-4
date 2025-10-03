@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const services = [
@@ -50,6 +50,15 @@ export default function FeaturedWorkSection() {
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev - 1 + services.length) % services.length);
   };
+
+  // Auto-advance carousel every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
 
   const getVisibleServices = () => {
     const visible = [];
