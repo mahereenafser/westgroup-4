@@ -3,40 +3,48 @@ import Link from "next/link";
 
 const blogPosts = [
   {
-    title: "What to Look for in a Website: 8 Examples",
+    title: "What to Do When You Face Financial Uncertainty",
     excerpt:
-      "Discover essential website features through insightful examples for optimal performance.",
-    category: "News",
+      "Navigate through financial uncertainty with expert guidance from Vancouver's trusted financial advisors.",
+    category: "Emergency Planning",
+    date: "January 15, 2025",
+    readTime: "8 min",
     image:
       "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f2226263-da7a-443e-b422-c355b61dc1c1-leevi-template-framer-website/assets/images/HJa4K53QuFfKjrxphaB7BxizPWk-8.webp?",
-    link: "/blog/what-to-look-for-in-a-website-8-examples",
+    link: "/blog/what-to-do-when-you-face-financial-uncertainty",
   },
   {
-    title: "How Much Does a Website Cost?",
+    title: "Complete Guide to Financial Planning Services in Surrey, BC",
     excerpt:
-      "Uncover the factors influencing website costs to plan your budget effectively.",
-    category: "News",
+      "Comprehensive guide to financial planning services available in Surrey, BC.",
+    category: "Location Guide",
+    date: "January 12, 2025",
+    readTime: "12 min",
     image:
       "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f2226263-da7a-443e-b422-c355b61dc1c1-leevi-template-framer-website/assets/images/I7ZcDkvdv3O3ip0JVioRHGmsSLM-9.webp?",
-    link: "/blog/how-much-does-a-website-cost",
+    link: "/blog/complete-guide-to-financial-planning-services-in-surrey-bc",
   },
   {
-    title: "How to Compare and Choose Agencies",
+    title: "How Much Does Financial Advisory Service Cost in Surrey, BC?",
     excerpt:
-      "Navigate agency options with expert advice for the perfect partnership.",
-    category: "Studio",
+      "Transparent breakdown of financial advisory service costs in Surrey, BC.",
+    category: "Pricing Guide",
+    date: "January 10, 2025",
+    readTime: "10 min",
     image:
       "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f2226263-da7a-443e-b422-c355b61dc1c1-leevi-template-framer-website/assets/images/XKjBrCD8vqvJKnntPIQDw8wnk-10.webp?",
-    link: "/blog/how-to-compare-and-choose-agencies",
+    link: "/blog/how-much-does-financial-advisory-service-cost-in-surrey-bc",
   },
   {
-    title: "6 Problems With Agencies",
+    title: "Winter Financial Planning: Preparation Guide",
     excerpt:
-      "Identify common agency pitfalls and strategies to avoid them effectively.",
-    category: "Studio",
+      "Prepare your finances for the winter season with comprehensive tax planning.",
+    category: "Seasonal Planning",
+    date: "January 8, 2025",
+    readTime: "9 min",
     image:
       "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f2226263-da7a-443e-b422-c355b61dc1c1-leevi-template-framer-website/assets/images/yVf96ivbYix8TMQRR5qnGeWPg8I-11.webp?",
-    link: "/blog/6-problems-with-agencies",
+    link: "/blog/winter-financial-planning-preparation-guide",
   },
 ];
 
@@ -46,10 +54,10 @@ export default function BlogSection() {
       <div className="mx-auto max-w-[1200px] px-8 lg:px-20">
         <div className="mb-16 text-center">
           <h2 className="text-[3rem] font-bold leading-tight tracking-tighter text-foreground">
-            Blog
+            Financial Insights & Resources
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-[#4a4a4a]">
-            Explore insights, trends, and tips in our engaging blog posts.
+            Expert financial planning advice, guides, and insights from WESTGROUP's team of professionals.
           </p>
         </div>
 
