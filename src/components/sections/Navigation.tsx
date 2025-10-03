@@ -6,10 +6,10 @@ import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
 
 const navItems = [
-  { name: "Work", href: "/work" },
+  { name: "Home", href: "/" },
   { name: "Services", href: "/services" },
-  { name: "About", href: "/about" },
-  { name: "Blog", href: "/blog" },
+  { name: "Locations", href: "/locations" },
+  { name: "Calculators", href: "/calculators" },
 ];
 
 export default function Navigation() {
