@@ -1,8 +1,3 @@
-import Image from "next/image";
-
-const imageUrl =
-  "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/f2226263-da7a-443e-b422-c355b61dc1c1-leevi-template-framer-website/assets/images/xevNSPDoJkJmNpNTcGzKp5PdRkc-2.webp?";
-
 export default function HeroSection() {
   return (
     <section className="flex flex-col items-center gap-16 pt-24 pb-16 lg:pb-24">
@@ -20,14 +15,16 @@ export default function HeroSection() {
 
       <div className="container w-full">
         <div className="relative w-full overflow-hidden rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
-          <Image
-            src={imageUrl}
-            alt="Three professionals in business casual attire posing against a neutral gray background"
-            width={2500}
-            height={1250}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
             className="aspect-[2/1] h-auto w-full object-cover"
-            priority
-          />
+          >
+            <source src="/videos/hero-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </section>
