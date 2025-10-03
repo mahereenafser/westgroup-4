@@ -19,16 +19,24 @@ export default function ContactCalloutSection() {
             <path d="M45 0V45H0V90H45V135H90V90H135V45H90V0H45Z"></path>
           </svg>
         </div>
-        <p className="text-caption mb-6 text-[#666666]">CONTACT</p>
+        <p className="text-caption mb-6 text-[#666666]">SCHEDULE A CONSULTATION</p>
         <h3 className="mb-10 max-w-xl">
-          Let&apos;s create your next big project together.
+          Let&apos;s discuss your financial goals and create a personalized wealth management strategy.
         </h3>
-        <Link
-          href="/contact"
-          className="text-button inline-block rounded-lg bg-primary py-3 px-8 text-primary-foreground transition-colors hover:bg-primary/90"
-        >
-          Get in Touch
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+          <Link
+            href="/contact"
+            className="text-button inline-block rounded-lg bg-primary py-3 px-8 text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            Book Consultation
+          </Link>
+          <a
+            href="tel:6045889688"
+            className="text-button inline-block rounded-lg bg-transparent border-2 border-primary py-3 px-8 text-foreground transition-colors hover:bg-primary/10"
+          >
+            Call (604) 588-9688
+          </a>
+        </div>
       </div>
     </section>
   );

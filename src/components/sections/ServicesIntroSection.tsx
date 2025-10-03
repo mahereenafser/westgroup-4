@@ -1,21 +1,21 @@
-import { Layers, Pencil, Box } from 'lucide-react';
+import { TrendingUp, Shield, PiggyBank } from 'lucide-react';
 import Link from 'next/link';
 
 const services = [
   {
-    icon: Layers,
-    title: 'App Design',
-    description: 'Crafting intuitive and visually stunning app designs that enhance user experience and drive engagement on all devices.',
+    icon: TrendingUp,
+    title: 'Wealth Management',
+    description: 'Comprehensive investment management and retirement income planning tailored to high-net-worth individuals and families.',
   },
   {
-    icon: Pencil,
-    title: 'Web design',
-    description: 'Creating beautiful, responsive websites that captivate audiences and reflect your brand\'s unique identity.',
+    icon: Shield,
+    title: 'Estate Planning',
+    description: 'Strategic estate and succession planning to protect your legacy and ensure smooth wealth transfer to future generations.',
   },
   {
-    icon: Box,
-    title: 'Framer',
-    description: 'Building robust and scalable websites with cutting-edge technologies to ensure seamless performance and functionality.',
+    icon: PiggyBank,
+    title: 'Tax Optimization',
+    description: 'Expert tax-efficient strategies and planning to maximize your wealth while minimizing tax liabilities across all investments.',
   },
 ];
 
@@ -29,15 +29,15 @@ export default function ServicesIntroSection() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-6">
             <div className="lg:col-span-4">
               <p className="text-sm font-normal uppercase tracking-wider text-[#666666]">
-                Our Service
+                Our Services
               </p>
             </div>
             <div className="lg:col-span-8 flex flex-col gap-6">
               <h2 className="text-5xl lg:text-[56px] font-bold leading-none tracking-tight text-foreground">
-                Your next<br />innovation.
+                Comprehensive<br />Financial Solutions
               </h2>
               <p className="text-lg font-normal leading-relaxed text-muted-foreground max-w-xl">
-                Expert app design, captivating web design, and advanced web development to elevate your digital presence and user experience.
+                Fee-only fiduciary financial planning, investment management, and tax optimization strategies for high-net-worth families across Metro Vancouver.
               </p>
             </div>
           </div>
@@ -68,10 +68,10 @@ export default function ServicesIntroSection() {
           {/* CTA Button */}
           <div className="flex justify-center">
             <Link
-              href="https://leevi-template.framer.website/services"
+              href="/services"
               className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-lg h-auto px-12 py-6 text-base font-bold uppercase tracking-wider transition-colors"
             >
-              More Information
+              View All Services
             </Link>
           </div>
 

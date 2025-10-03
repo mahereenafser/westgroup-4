@@ -9,11 +9,11 @@ export default function HeroSection() {
       <div className="container w-full">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
           <h1 className="text-[48px] font-black leading-[0.9] tracking-[-0.02em] text-foreground md:text-[60px] lg:basis-3/5 lg:text-[80px]">
-            Create digital <br />
-            innovations.
+            Your Financial <br />
+            Future Starts Here
           </h1>
           <p className="text-xl text-muted-foreground lg:basis-2/5 lg:max-w-[400px] lg:text-right">
-            Elevate your digital presence with stunning design and development.
+            Fee-only fiduciary advisors serving high-net-worth families across Metro Vancouver with transparent, unbiased financial planning.
           </p>
         </div>
       </div>

@@ -1,10 +1,10 @@
 export default function AboutSection() {
   const awardsData = [
-    { name: "Framer Award", date: "AUG 2022" },
-    { name: "Webdesign Award 2022", date: "AUG 2022" },
-    { name: "Website of the Year 2021", date: "AUG 2022" },
-    { name: "App Design of the Year 2021", date: "AUG 2022" },
-    { name: "Usability Award", date: "AUG 2022" },
+    { name: "BBB A+ Rating", date: "2024" },
+    { name: "MDRT Top of Table", date: "2024" },
+    { name: "CFP® Certified", date: "Professional" },
+    { name: "CFA Charterholder", date: "Professional" },
+    { name: "3000+ Clients Served", date: "Since 2010" },
   ];
 
   return (
@@ -12,7 +12,7 @@ export default function AboutSection() {
       <div className="max-w-[1200px] mx-auto px-6 md:px-8 lg:px-12 xl:px-20">
         <div className="mb-8">
           <p className="text-[13px] font-normal uppercase tracking-wider text-foreground">
-            Why Leevi
+            About WESTGROUP
           </p>
         </div>
 
@@ -22,8 +22,7 @@ export default function AboutSection() {
               className="text-3xl lg:text-[2.5rem] font-bold text-foreground"
               style={{ lineHeight: "1.2" }}
             >
-              We create stunning digital experiences that people will love. On
-              all plattforms.
+              Fee-Only Fiduciary Advisors Committed to Your Financial Success
             </h2>
           </div>
           <div className="flex flex-col gap-6">
@@ -31,23 +30,13 @@ export default function AboutSection() {
               className="text-base text-secondary-text"
               style={{ lineHeight: "1.7" }}
             >
-              At Leevi, we are passionate about transforming digital visions
-              into reality. As a creative digital agency specializing in app
-              design, web design, and web development, we pride ourselves on
-              delivering exceptional solutions that exceed our clients&apos;
-              expectations. Our team of skilled designers and developers work
-              collaboratively to create intuitive, visually stunning, and
-              high-performing digital experiences.
+              WESTGROUP Financial Management Inc. is a fee-only fiduciary financial advisory firm located in Surrey, British Columbia. We serve high-net-worth individuals and families across Metro Vancouver with transparent, unbiased financial planning. Our team of CFP®, CFA, and PFP professionals is dedicated to delivering exceptional wealth management solutions that exceed our clients&apos; expectations.
             </p>
             <p
               className="text-base text-secondary-text"
               style={{ lineHeight: "1.7" }}
             >
-              Our expertise in app design ensures that every application we
-              create is not only aesthetically pleasing but also user-friendly
-              and engaging. We understand the importance of a seamless user
-              experience, and our designs reflect that commitment, making
-              interactions enjoyable and efficient.
+              With over 3000 clients served and an A+ BBB rating, our expertise in comprehensive financial planning ensures that every strategy we create is tailored to your unique goals. We understand the importance of tax optimization, estate planning, and retirement income strategies, and our approach reflects that commitment to your long-term financial well-being.
             </p>
           </div>
         </div>
@@ -55,7 +44,7 @@ export default function AboutSection() {
         <div className="mt-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
             <div>
-              <h4 className="text-xl font-bold text-foreground">Our Awards</h4>
+              <h4 className="text-xl font-bold text-foreground">Our Credentials & Recognition</h4>
             </div>
             <div className="flex flex-col">
               {awardsData.map((award) => (

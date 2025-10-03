@@ -1,40 +1,44 @@
 import Link from 'next/link';
-import { Twitter, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
     <footer className="bg-[#E8E8E8] py-16 md:py-20">
       <div className="mx-auto max-w-7xl px-8 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
-          
+
           {/* Brand Column */}
-          <div className="lg:col-span-3 flex flex-col gap-6">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl font-bold text-foreground">leevi</span>
-              <div className="h-2 w-2 rounded-full bg-accent"></div>
-            </div>
-            <div className="flex gap-3">
-              <Link
-                href="https://twitter.com"
-                className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-2 text-sm text-foreground hover:bg-gray-100 transition-colors"
-              >
-                <Twitter className="h-4 w-4" />
-                Twitter
-              </Link>
-              <Link
-                href="https://instagram.com"
-                className="inline-flex items-center gap-2 bg-white rounded-full px-4 py-2 text-sm text-foreground hover:bg-gray-100 transition-colors"
-              >
-                <Instagram className="h-4 w-4" />
-                Instagram
-              </Link>
+          <div className="lg:col-span-4 flex flex-col gap-6">
+            <Image
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/logo.black-removebg-preview-1759489047056.png"
+              alt="WESTGROUP Financial Management Inc"
+              width={180}
+              height={50}
+            />
+            <p className="text-sm text-muted-foreground">
+              Fee-only fiduciary financial advisors serving high-net-worth families across Metro Vancouver.
+            </p>
+            <div className="flex flex-col gap-2">
+              <a href="tel:6045889688" className="inline-flex items-center gap-2 text-sm text-foreground hover:text-accent transition-colors">
+                <Phone className="h-4 w-4" />
+                (604) 588-9688
+              </a>
+              <a href="mailto:info@westgroupfinancial.com" className="inline-flex items-center gap-2 text-sm text-foreground hover:text-accent transition-colors">
+                <Mail className="h-4 w-4" />
+                info@westgroupfinancial.com
+              </a>
+              <span className="inline-flex items-start gap-2 text-sm text-muted-foreground">
+                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                Suite #210 – 2411 160 St<br />South Surrey, BC V3Z 0C8
+              </span>
             </div>
           </div>
 
-          {/* Pages Column */}
+          {/* Quick Links Column */}
           <div className="lg:col-span-3">
             <h4 className="text-sm font-bold uppercase tracking-wider text-foreground mb-4">
-              Pages
+              Quick Links
             </h4>
             <ul className="flex flex-col gap-3">
               <li>
@@ -48,68 +52,57 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  About
+                <Link href="/locations" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Locations
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Contact
+                <Link href="/calculators" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Calculators
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* CMS Column */}
+          {/* Services Column */}
           <div className="lg:col-span-3">
             <h4 className="text-sm font-bold uppercase tracking-wider text-foreground mb-4">
-              CMS
+              Services
             </h4>
             <ul className="flex flex-col gap-3">
               <li>
-                <Link href="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Work
+                <Link href="/services#wealth-management" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Wealth Management
                 </Link>
               </li>
               <li>
-                <Link href="/work/single" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Work Single
+                <Link href="/services#retirement-planning" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Retirement Planning
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Blog
+                <Link href="/services#estate-planning" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Estate Planning
                 </Link>
               </li>
               <li>
-                <Link href="/blog/single" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Blog Single
+                <Link href="/services#tax-optimization" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Tax Optimization
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Utility Pages Column */}
-          <div className="lg:col-span-3">
+          {/* Hours Column */}
+          <div className="lg:col-span-2">
             <h4 className="text-sm font-bold uppercase tracking-wider text-foreground mb-4">
-              Utility Pages
+              Office Hours
             </h4>
-            <ul className="flex flex-col gap-3">
-              <li>
-                <Link href="/404" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  404 Error Page
-                </Link>
-              </li>
-              <li>
-                <Link href="/styleguide" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Styleguide
-                </Link>
-              </li>
-              <li>
-                <Link href="/licensing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Licensing
-                </Link>
-              </li>
+            <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
+              <li>Monday - Friday</li>
+              <li className="font-semibold text-foreground">8:00 AM - 5:00 PM</li>
+              <li className="mt-2">Saturday - Sunday</li>
+              <li>Closed</li>
             </ul>
           </div>
         </div>
@@ -117,17 +110,20 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © Made by{' '}
-            <Link href="https://gola.io" className="hover:text-foreground transition-colors">
-              Gola Templates
-            </Link>
+            © {new Date().getFullYear()} WESTGROUP Financial Management Inc. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link
-              href="https://framer.com"
+              href="/privacy"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              Made in Framer
+              Privacy Policy
+            </Link>
+            <Link
+              href="/terms"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Terms of Service
             </Link>
           </div>
         </div>

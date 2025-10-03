@@ -1,21 +1,27 @@
 const testimonials = [
   {
-    title: "Best <br />App Design",
+    title: "Exceptional <br />Customer Service",
     isLarge: true,
     content:
-      "Leevi's team delivered an incredible app design that perfectly matched our vision. Their attention to detail is unmatched!",
+      "WESTGROUP's team provided exceptional customer service and deep knowledge in financial planning. They helped us optimize our retirement strategy perfectly.",
+    author: "Aman Patel",
+    role: "Tech Entrepreneur"
   },
   {
-    title: "The best customer service",
+    title: "Personalized Financial Planning",
     isLarge: false,
     content:
-      "Our new website looks amazing, thanks to Leevi. They truly captured our brand's essence and made it shine online.",
+      "The personalized planning approach and tax-saving strategies have made a significant difference in our wealth management. Highly recommend their services!",
+    author: "David Lau",
+    role: "Business Owner"
   },
   {
-    title: "We are 100% happy.",
+    title: "Transparent Fee-Only Approach",
     isLarge: false,
     content:
-      "Leevi transformed our outdated site into a modern, high-performing platform. Their innovative approach exceeded our expectations.",
+      "As an investment professional myself, I truly value WESTGROUP's transparent fee-only approach and unbiased advice. They put clients first.",
+    author: "Sumeet Badhan",
+    role: "Investment Professional"
   },
 ];
 
@@ -52,6 +58,10 @@ export default function TestimonialsSection() {
               <p className="text-base text-muted-foreground leading-relaxed">
                 {testimonial.content}
               </p>
+              <div className="mt-2 pt-4 border-t border-[#e8e8e8]">
+                <p className="text-sm font-semibold text-foreground">{testimonial.author}</p>
+                <p className="text-xs text-muted-foreground">{testimonial.role}</p>
+              </div>
             </div>
           ))}
         </div>
