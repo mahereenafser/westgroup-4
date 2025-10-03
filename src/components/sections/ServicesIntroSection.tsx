@@ -47,7 +47,7 @@ export default function ServicesIntroSection() {
             {/* Right Column - Text */}
             <div className="lg:flex lg:justify-end">
               <div className="flex flex-col gap-6">
-                <h2 className="text-5xl lg:text-[56px] font-bold leading-none tracking-tight text-foreground">
+                <h2 className="text-5xl lg:text-[56px] leading-none tracking-tight text-foreground" style={{ fontWeight: 300 }}>
                   Comprehensive<br />Financial Solutions
                 </h2>
                 <p className="text-lg font-normal leading-relaxed text-muted-foreground">

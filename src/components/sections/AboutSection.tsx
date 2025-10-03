@@ -19,8 +19,8 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
           <div>
             <h2
-              className="text-3xl lg:text-[2.5rem] font-bold text-foreground"
-              style={{ lineHeight: "1.2" }}
+              className="text-3xl lg:text-[2.5rem] text-foreground"
+              style={{ lineHeight: "1.2", fontWeight: 300 }}
             >
               Fee-Only Fiduciary Advisors Committed to Your Financial Success
             </h2>

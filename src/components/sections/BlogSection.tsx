@@ -57,7 +57,7 @@ export default function BlogSection() {
           {/* Left Side - Fixed Heading */}
           <div className="lg:col-span-4">
             <div className="lg:sticky lg:top-24">
-              <h2 className="text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-foreground mb-4">
+              <h2 className="text-5xl lg:text-6xl leading-tight tracking-tight text-foreground mb-4" style={{ fontWeight: 300 }}>
                 Blog
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">

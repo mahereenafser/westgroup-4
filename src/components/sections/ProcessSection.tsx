@@ -37,7 +37,7 @@ export default function ProcessSection() {
           <p className="text-sm font-normal uppercase tracking-wider text-[#666666]">
             How we work
           </p>
-          <h2 className="mt-4 text-[2.5rem] font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-[3.5rem]">
+          <h2 className="mt-4 text-[2.5rem] leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-[3.5rem]" style={{ fontWeight: 300 }}>
             Our Process
           </h2>
         </div>

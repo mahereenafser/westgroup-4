@@ -37,7 +37,8 @@ export default function TestimonialsSection() {
           </p>
           <h2
             id={headingId}
-            className="text-[40px] font-bold text-foreground tracking-[-0.01em] leading-[1.1]"
+            className="text-[40px] text-foreground tracking-[-0.01em] leading-[1.1]"
+            style={{ fontWeight: 300 }}
           >
             What our clients say
           </h2>
