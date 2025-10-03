@@ -50,47 +50,66 @@ const blogPosts = [
 
 export default function BlogSection() {
   return (
-    <section className="bg-secondary py-20">
-      <div className="mx-auto max-w-[1200px] px-8 lg:px-20">
-        <div className="mb-16 text-center">
-          <h2 className="text-[3rem] font-bold leading-tight tracking-tighter text-foreground">
-            Financial Insights & Resources
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-[#4a4a4a]">
-            Expert financial planning advice, guides, and insights from WESTGROUP's team of professionals.
-          </p>
-        </div>
+    <section className="bg-secondary py-20 lg:py-32">
+      <div className="mx-auto max-w-7xl px-8 lg:px-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          {blogPosts.map((post) => (
-            <div
-              key={post.link}
-              className="group flex flex-col overflow-hidden rounded-xl bg-card shadow-[0_2px_12px_rgba(0,0,0,0.04)] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_4px_24px_rgba(0,0,0,0.08)]"
-            >
-              <Link href={post.link} className="relative block">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  width={554}
-                  height={311}
-                  className="aspect-video w-full object-cover"
-                />
-                <div className="absolute bottom-4 left-4">
-                  <span className="inline-block rounded-md border border-[#e8e8e8] bg-white px-3 py-1 text-[13px] font-normal uppercase tracking-wider text-foreground">
-                    {post.category}
-                  </span>
-                </div>
-              </Link>
-              <div className="flex flex-1 flex-col p-6">
-                <h3 className="mb-2 text-xl font-semibold text-foreground">
-                  <Link href={post.link} className="hover:underline">
-                    {post.title}
-                  </Link>
-                </h3>
-                <p className="text-base text-[#666666]">{post.excerpt}</p>
-              </div>
+          {/* Left Side - Sticky Heading */}
+          <div className="lg:col-span-4">
+            <div className="lg:sticky lg:top-24">
+              <h2 className="text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-foreground mb-4">
+                Blog
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Explore insights, trends, and tips in our engaging blog posts
+              </p>
             </div>
-          ))}
+          </div>
+
+          {/* Right Side - Scrollable Blog Cards Grid */}
+          <div className="lg:col-span-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {blogPosts.map((post) => (
+                <Link
+                  key={post.link}
+                  href={post.link}
+                  className="group flex flex-col overflow-hidden rounded-2xl bg-card border border-[#e8e8e8] shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div className="relative overflow-hidden">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={400}
+                      height={225}
+                      className="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="inline-block rounded-lg bg-white/95 backdrop-blur-sm px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-foreground shadow-sm">
+                        {post.category}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-1 flex-col p-6">
+                    <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
+                      <span>{post.date}</span>
+                      <span>•</span>
+                      <span>{post.readTime} read</span>
+                    </div>
+
+                    <h3 className="text-xl font-bold text-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h3>
+
+                    <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
+                      {post.excerpt}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
