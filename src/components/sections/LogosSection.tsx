@@ -49,7 +49,7 @@ const logos = [
           fontWeight="700"
           letterSpacing="0.1em"
           textAnchor="middle"
-          textTransform="uppercase"
+          style={{ textTransform: "uppercase" }}
           x="44"
           y="34"
         >
@@ -62,7 +62,7 @@ const logos = [
           fontWeight="700"
           letterSpacing="0.1em"
           textAnchor="middle"
-          textTransform="uppercase"
+          style={{ textTransform: "uppercase" }}
           x="44"
           y="62"
         >
@@ -105,7 +105,7 @@ const logos = [
           fontSize="10"
           fontWeight="700"
           letterSpacing=".1em"
-          textTransform="uppercase"
+          style={{ textTransform: "uppercase" }}
         >
           <text x="90" y="40">
             CREATIVE
@@ -148,7 +148,7 @@ const logos = [
           fontWeight="700"
           letterSpacing=".1em"
           textAnchor="middle"
-          textTransform="uppercase"
+          style={{ textTransform: "uppercase" }}
         >
           <text x="44" y="40">
             IN
@@ -187,7 +187,7 @@ const logos = [
           fontWeight="700"
           letterSpacing=".1em"
           textAnchor="middle"
-          textTransform="uppercase"
+          style={{ textTransform: "uppercase" }}
         >
           <text x="50" y="70">
             Abstract
@@ -225,7 +225,7 @@ const logos = [
           fontWeight="700"
           letterSpacing=".1em"
           textAnchor="middle"
-          textTransform="uppercase"
+          style={{ textTransform: "uppercase" }}
         >
           <text x="69" y="42">
             VISION
@@ -276,7 +276,7 @@ const logos = [
           fontWeight="700"
           letterSpacing=".1em"
           textAnchor="middle"
-          textTransform="uppercase"
+          style={{ textTransform: "uppercase" }}
         >
           <text x="44" y="88">
             INVISION
