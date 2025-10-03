@@ -222,7 +222,8 @@ export default function LogosSection() {
   return (
     <section className="bg-background py-32">
       <div className="container">
-        <div className="flex flex-wrap justify-center items-center gap-x-16 lg:gap-x-24 gap-y-12">
+        {/* Desktop Layout - All in one row */}
+        <div className="hidden lg:flex flex-wrap justify-center items-center gap-x-16 lg:gap-x-24 gap-y-12">
           {logos.map((logo) => (
             <div
               key={logo.name}
@@ -232,6 +233,35 @@ export default function LogosSection() {
               {logo.svg}
             </div>
           ))}
+        </div>
+
+        {/* Mobile Layout - Two rows, centered */}
+        <div className="lg:hidden flex flex-col items-center gap-8">
+          {/* First row - 3 awards */}
+          <div className="flex justify-center items-center gap-6">
+            {logos.slice(0, 3).map((logo) => (
+              <div
+                key={logo.name}
+                className="opacity-70 fill-current text-foreground filter grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
+                title={logo.name}
+              >
+                {logo.svg}
+              </div>
+            ))}
+          </div>
+
+          {/* Second row - 2 awards */}
+          <div className="flex justify-center items-center gap-6">
+            {logos.slice(3, 5).map((logo) => (
+              <div
+                key={logo.name}
+                className="opacity-70 fill-current text-foreground filter grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
+                title={logo.name}
+              >
+                {logo.svg}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
