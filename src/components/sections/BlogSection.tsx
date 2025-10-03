@@ -56,7 +56,7 @@ export default function BlogSection() {
 
           {/* Left Side - Fixed Heading */}
           <div className="lg:col-span-4">
-            <div className="lg:fixed lg:w-[280px]">
+            <div className="lg:sticky lg:top-24">
               <h2 className="text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-foreground mb-4">
                 Blog
               </h2>

@@ -7,8 +7,8 @@ export default function HeroSection() {
             Your Financial <br />
             Future Starts Here
           </h1>
-          <p className="text-xl text-muted-foreground lg:basis-2/5 lg:max-w-[400px] lg:text-right">
-            Fee-only fiduciary advisors serving high-net-worth families across Metro Vancouver with transparent, unbiased financial planning.
+          <p className="text-xl text-muted-foreground lg:basis-2/5 lg:max-w-[400px] lg:text-left">
+            Transparent, fee-only financial planning for Metro Vancouver families.
           </p>
         </div>
       </div>
