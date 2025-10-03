@@ -26,30 +26,34 @@ export default function ServicesIntroSection() {
         <div className="flex flex-col gap-16 md:gap-24">
 
           {/* Two Column Layout: Video + Text */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 items-center">
             {/* Left Column - Video */}
-            <div className="relative w-full overflow-hidden rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-auto object-cover"
-              >
-                <source src="/videos/coins-1.mov" type="video/quicktime" />
-                <source src="/videos/coins-1.mov" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="lg:flex lg:justify-start">
+              <div className="relative w-full overflow-hidden rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-auto object-cover"
+                >
+                  <source src="/videos/coins-1.mov" type="video/quicktime" />
+                  <source src="/videos/coins-1.mov" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
 
             {/* Right Column - Text */}
-            <div className="flex flex-col gap-6">
-              <h2 className="text-5xl lg:text-[56px] font-bold leading-none tracking-tight text-foreground">
-                Comprehensive<br />Financial Solutions
-              </h2>
-              <p className="text-lg font-normal leading-relaxed text-muted-foreground">
-                Fee-only fiduciary financial planning, investment management, and tax optimization strategies for high-net-worth families across Metro Vancouver.
-              </p>
+            <div className="lg:flex lg:justify-end">
+              <div className="flex flex-col gap-6">
+                <h2 className="text-5xl lg:text-[56px] font-bold leading-none tracking-tight text-foreground">
+                  Comprehensive<br />Financial Solutions
+                </h2>
+                <p className="text-lg font-normal leading-relaxed text-muted-foreground">
+                  Fee-only fiduciary financial planning, investment management, and tax optimization strategies for high-net-worth families across Metro Vancouver.
+                </p>
+              </div>
             </div>
           </div>
 

@@ -2,14 +2,18 @@ export default function HeroSection() {
   return (
     <section className="flex flex-col items-center gap-16 pt-24 pb-16 lg:pb-24">
       <div className="container w-full">
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
-          <h1 className="text-[48px] leading-[0.9] tracking-[-0.02em] text-foreground md:text-[60px] lg:basis-3/5 lg:text-[80px]" style={{ fontWeight: 300 }}>
-            Your Financial <br />
-            Future Starts Here
-          </h1>
-          <p className="text-xl text-muted-foreground lg:basis-2/5 lg:max-w-[400px] lg:text-left">
-            Transparent, fee-only financial planning for Metro Vancouver families.
-          </p>
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:gap-24">
+          <div className="lg:flex-1">
+            <h1 className="text-[48px] leading-[0.9] tracking-[-0.02em] text-foreground md:text-[60px] lg:text-[80px]" style={{ fontWeight: 300 }}>
+              Your Financial <br />
+              Future Starts Here
+            </h1>
+          </div>
+          <div className="lg:flex-1 lg:flex lg:justify-end">
+            <p className="text-xl text-muted-foreground lg:max-w-[400px] lg:text-left">
+              Transparent, fee-only financial planning for Metro Vancouver families.
+            </p>
+          </div>
         </div>
       </div>
 

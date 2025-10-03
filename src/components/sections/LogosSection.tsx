@@ -222,6 +222,11 @@ export default function LogosSection() {
   return (
     <section className="bg-background py-32">
       <div className="container">
+        <div className="text-center mb-16">
+          <p className="text-sm font-normal uppercase tracking-wider text-[#666666]">
+            OUR AWARDS
+          </p>
+        </div>
         {/* Desktop Layout - All in one row */}
         <div className="hidden lg:flex flex-wrap justify-center items-center gap-x-16 lg:gap-x-24 gap-y-12">
           {logos.map((logo) => (
