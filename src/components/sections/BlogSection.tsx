@@ -54,9 +54,9 @@ export default function BlogSection() {
       <div className="mx-auto max-w-7xl px-8 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
 
-          {/* Left Side - Sticky Heading */}
+          {/* Left Side - Fixed Heading */}
           <div className="lg:col-span-4">
-            <div className="lg:sticky lg:top-24">
+            <div className="lg:fixed lg:w-[280px]">
               <h2 className="text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-foreground mb-4">
                 Blog
               </h2>

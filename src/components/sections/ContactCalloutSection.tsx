@@ -22,7 +22,7 @@ export default function ContactCalloutSection() {
             {/* Bottom - Text and Buttons */}
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
               <p className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground lg:basis-2/3">
-                Let&apos;s discuss your financial goals and create a personalized wealth management strategy
+                Let&apos;s discuss your financial goals
               </p>
 
               <div className="flex flex-col gap-4 lg:items-end">
