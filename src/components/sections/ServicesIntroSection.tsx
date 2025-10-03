@@ -24,19 +24,29 @@ export default function ServicesIntroSection() {
     <section className="bg-secondary py-16 md:py-24 lg:py-40">
       <div className="mx-auto max-w-7xl px-8 md:px-12 lg:px-20">
         <div className="flex flex-col gap-16 md:gap-24">
-          
-          {/* Intro Text */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-6">
-            <div className="lg:col-span-4">
-              <p className="text-sm font-normal uppercase tracking-wider text-[#666666]">
-                Our Services
-              </p>
+
+          {/* Two Column Layout: Video + Text */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Left Column - Video */}
+            <div className="relative w-full overflow-hidden rounded-2xl shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-auto object-cover"
+              >
+                <source src="/videos/coins-1.mov" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
-            <div className="lg:col-span-8 flex flex-col gap-6">
+
+            {/* Right Column - Text */}
+            <div className="flex flex-col gap-6">
               <h2 className="text-5xl lg:text-[56px] font-bold leading-none tracking-tight text-foreground">
                 Comprehensive<br />Financial Solutions
               </h2>
-              <p className="text-lg font-normal leading-relaxed text-muted-foreground max-w-xl">
+              <p className="text-lg font-normal leading-relaxed text-muted-foreground">
                 Fee-only fiduciary financial planning, investment management, and tax optimization strategies for high-net-worth families across Metro Vancouver.
               </p>
             </div>
@@ -63,16 +73,6 @@ export default function ServicesIntroSection() {
                 </div>
               );
             })}
-          </div>
-          
-          {/* CTA Button */}
-          <div className="flex justify-center">
-            <Link
-              href="/services"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-lg h-auto px-12 py-6 text-base font-bold uppercase tracking-wider transition-colors"
-            >
-              View All Services
-            </Link>
           </div>
 
         </div>
