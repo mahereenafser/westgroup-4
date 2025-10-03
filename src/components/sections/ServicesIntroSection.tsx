@@ -36,6 +36,7 @@ export default function ServicesIntroSection() {
                 playsInline
                 className="w-full h-auto object-cover"
               >
+                <source src="/videos/coins-1.mov" type="video/quicktime" />
                 <source src="/videos/coins-1.mov" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
