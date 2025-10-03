@@ -6,7 +6,7 @@ export default function ContactCalloutSection() {
       id="contact-callout"
       className="bg-secondary py-16 md:py-24"
     >
-      <div className="mx-auto max-w-7xl px-8 lg:px-20">
+      <div className="mx-auto max-w-[1600px] px-8 lg:px-20">
         <div className="bg-accent rounded-3xl p-8 md:p-12 lg:p-16 border-8 border-card">
           <div className="flex flex-col min-h-[400px]">
             {/* Top - Heading */}
