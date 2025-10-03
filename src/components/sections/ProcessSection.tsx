@@ -1,4 +1,4 @@
-import { Box, Target, Sparkles } from 'lucide-react';
+import { Search, FileText, CheckCircle, TrendingUp } from 'lucide-react';
 
 interface ProcessStep {
   Icon: React.ElementType;
@@ -8,19 +8,24 @@ interface ProcessStep {
 
 const processData: ProcessStep[] = [
   {
-    Icon: Box,
-    title: 'Concept',
-    description: 'Developing unique ideas tailored to your vision, setting the foundation for a standout digital experience.',
+    Icon: Search,
+    title: 'Discovery & Analysis',
+    description: 'Comprehensive review of your current financial situation, goals, and risk tolerance.',
   },
   {
-    Icon: Target,
-    title: 'Pixel Perfect',
-    description: 'Crafting precise, flawless designs that capture every detail, ensuring visual and functional excellence.',
+    Icon: FileText,
+    title: 'Strategy Development',
+    description: 'Custom financial strategy design based on your unique circumstances and objectives.',
   },
   {
-    Icon: Sparkles,
-    title: 'Innovative',
-    description: 'Implementing cutting-edge technologies to create groundbreaking solutions that drive your digital success.',
+    Icon: CheckCircle,
+    title: 'Implementation',
+    description: 'Systematic implementation of your financial plan with careful attention to tax efficiency.',
+  },
+  {
+    Icon: TrendingUp,
+    title: 'Ongoing Management',
+    description: 'Continuous monitoring, rebalancing, and strategy adjustments as your life evolves.',
   },
 ];
 
@@ -33,11 +38,11 @@ export default function ProcessSection() {
             How we work
           </p>
           <h2 className="mt-4 text-[2.5rem] font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-[3.5rem]">
-            Together we create.
+            Our Process
           </h2>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {processData.map(({ Icon, title, description }, index) => (
             <div key={index} className="flex flex-col items-center rounded-2xl bg-card p-8 text-center">
               <Icon className="h-[60px] w-auto text-foreground" strokeWidth={1} />

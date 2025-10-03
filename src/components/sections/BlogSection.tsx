@@ -61,7 +61,7 @@ export default function BlogSection() {
                 Blog
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Explore insights, trends, and tips in our engaging blog posts
+                Discover expert insights on emergency financial planning
               </p>
             </div>
           </div>
