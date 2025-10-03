@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className="antialiased lg:bg-[#E8E8E8]">
         <ErrorReporter />
         <Script
           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js"
@@ -27,7 +27,9 @@ export default function RootLayout({
           data-debug="true"
           data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
         />
-        {children}
+        <div className="lg:mx-auto lg:my-8 lg:max-w-[1400px] lg:rounded-3xl lg:bg-white lg:overflow-hidden lg:shadow-lg">
+          {children}
+        </div>
       </body>
     </html>
   );
